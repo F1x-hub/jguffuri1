@@ -35,6 +35,7 @@
   </head>
   <body>
     <div class="main">
+      <div class="backs">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Passport</a>
@@ -52,12 +53,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a id="nav-link" class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About us</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -67,46 +68,48 @@
                 >
                   Dropdown
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Menu One</a></li>
-                  <li class="nav-item dropdown">
-                    <a class="dropdown-item" href="#">Menu Two</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Menu One</a></li>
-                      <li><a class="dropdown-item" href="#">Menu Two</a></li>
-
-                      <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                  
+                  <li class="nav-item dropdown dropend"> 
+                    <a id="dropcol" class="nav-link dropdown-toggle "  href="#" id="nestedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu Two
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                      <li><a class="dropdown-item" href="#">Sub Menu one</a></li>
+                      <li><a class="dropdown-item" href="#">Sub Menu Two</a></li>
+                      <li><a class="dropdown-item" href="#">Sub Menu Three</a></li>
                     </ul>
                   </li>
-
                   <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                  
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">services</a>
+                <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
               </li>
             </ul>
             <ul class="navbar-nav d-flex" role="search">
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-outline-warning" type="submit">
                 Contaqt As
               </button>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="header">
+      <div class="tophead"><div class="header">
         <div class="inf">
-          <h1 class="heading">It is Better to Travel Well Than to Arrive</h1>
+          <h1 class="heading">It is Better to <br> Travel Well Than <br> to Arrive</h1>
           <div class="watchvideo">
             <a
               href="https://www.youtube.com/watch?v=mwtbEGNABWU"
               class="play-button align-items-center d-flex glightbox3"
               ><span></span
               ><img class="playicon" src="icons8-play-60.png" alt="" />
-              <span>watch video</span></a
+              <span>Watch Video</span></a
             >
           </div>
         </div>
@@ -116,13 +119,13 @@
           ></span>
           <span cla>Vernazza, Italy — $500.00 / night</span>
         </div>
-      </div>
-    </div>
+      </div></div>
+    </div></div>
     <!-- information about website -->
-    <div>
+    <div class="webinf">
       <div class="lefttx">
         <span>ABOUT US </span>
-        <h2>Explore All Corners of The World With Us</h2>
+        <h2>Explore All Corners of  The World With Us</h2>
         <p>
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts. Separated they
@@ -134,14 +137,14 @@
           the necessary regelialia. It is a paradisematic country, in which
           roasted parts of sentences fly into your mouth.
         </p>
-        <a href="Read more"></a>
+        <p class="infbott"><a href="#">Read more</a></p>
       </div>
       <div class="rightimg">
         <img
           src="https://preview.colorlib.com/theme/passport/images/about_1.jpg"
           alt=""
         />
-        <img
+        <img class="img2"
           src="https://preview.colorlib.com/theme/passport/images/about_2.jpg"
           alt=""
         />
@@ -254,67 +257,70 @@
     </div>
     <!-- blog -->
     <div class="blog">
-        <div>
+        <div class="clogsph2">
             <span>BLOG</span>
-            <h2>recent posts</h2>
+            <h2>Recent Posts</h2>
         </div>
-        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_1.jpg" alt=""><div><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
+        <div class="blogimg"><div><img src="https://preview.colorlib.com/theme/passport/images/gal_1.jpg" alt=""><div class="bloginf"><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
 
-</p></div><span>Read More ></span> </div>
-        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_2.jpg" alt=""><div><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
+</p></div><span class=" psinf">Read More <i class="fa-solid fa-chevron-right fa-2xs" style="color: #fc8621;"></i></span> </div>
+        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_2.jpg" alt=""><div class="bloginf"><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
 
-</p></div><span>Read More ></span> </div>
-        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_3.jpg" alt=""><div><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
+</p></div><span class=" psinf">Read More <i class="fa-solid fa-chevron-right fa-2xs" style="color: #fc8621;"></i></span> </div>
+        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_3.jpg" alt=""><div class="bloginf"><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
 
-</p></div><span>Read More ></span> </div>
-        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_4.jpg" alt=""><div><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
+</p></div><span class=" psinf">Read More <i class="fa-solid fa-chevron-right fa-2xs" style="color: #fc8621;"></i></span> </div>
+        <div><img src="https://preview.colorlib.com/theme/passport/images/gal_4.jpg" alt=""><div class="bloginf"><span>May 14, 2020</span><a href="#">Far far away, behind the word mountains</a> <p>Vokalia and Consonantia, there live the blind texts. Separated they live.
 
-</p></div><span>Read More ></span> </div>
+</p></div><span class=" psinf">Read More <i class="fa-solid fa-chevron-right fa-2xs" style="color: #fc8621;"></i></span> </div></div>
     </div>
     <!-- registration -->
-    <div>
-        <div class="flt"><h3></h3></div>
-        <div class="rght"> <a href="#"> Get started</a></div>
+    <div class="reg">
+        <div class="reg1"><div class="flt"><h3>Begin your adventurous journey here.</h3></div>
+        <div class="rght"> <a href="#"> Get started</a></div></div>
     </div>
     <!-- contact -->
-    <div>
-        <div>
+    <div class="backbot">
+      <div class="contact">
+       
+      <div class="conin">
             <div><h3>About Passport.
 
             </h3>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p></div>
-            <div>
+            <div class="conn">
                 <h3>Connect</h3>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
+                <ul class="brandul"><li class="brands"><a href="#"><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a></li>     
+                <li class="brands"><a href="#"><i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i></a></li>           
+                <li class="brands"><a href="#"><i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="brands"><a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a></li>     
+                <li class="brands"><a href="#"><i class="fa-brands fa-pinterest" style="color: rgb(255, 255, 255);"></i></a></li>  
+                <li class="brands"><a href="#"><i class="fa-brands fa-dribbble" style="color: rgb(255, 255, 255);"></i></a></li>     
+             </ul></div>
         </div>
-        <div><h3>Links</h3>
-        <a href="#">About us</a>
-        <a href="#">Services</a>
-        <a href="#">News</a>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a></div>
-        <div><h3>Company</h3>
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">News</a>
-            <a href="#">Careers</a>
-            <a href="#">Contact</a></div>
-        <div><h3>Contact</h3>
+        <div class="coninf"><h3>Links</h3>
+        <ul><li><a href="#">About us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a><li></li></ul></div>
+        <div class="coninf"><h3>Company</h3>
+            <ul><li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li></ul></div>
+        <div class="coninf"><h3>Contact</h3>
         <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-            <a href="#" >+1(123)-456-7890</a>
-            <a href="#" >+1(123)-456-7890</a>
-            <a href="#" >info@mydomain.com</a>
+            <ul><li><a href="#" >+1(123)-456-7890</a></li>
+            <li><a href="#" >+1(123)-456-7890</a></li>
+            <li><a href="#" >info@mydomain.com</a></li></ul>
         
     </div>
-    <p>Copyright ©2023 All rights reserved | This template is made with <i><i class="fa-solid fa-heart" style="color: rgb(220, 53, 69);"></i></i> by <a href="#">Colorlib</a></p>
-    </div>
-
+    </div> 
+    
+    <div class="cop"><p>Copyright ©2023 All rights reserved | This template is made with <i><i class="fa-solid fa-heart" style="color: rgb(220, 53, 69);"></i></i> by <a href="#">Colorlib</a></p></div>
+      </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
       integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -337,6 +343,14 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      
+      document.querySelectorAll('.dropdown-menu').forEach(function(element) {
+        element.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
     <script type="text/javascript">
       $(".owl-carousel ").owlCarousel({
         loop: true,

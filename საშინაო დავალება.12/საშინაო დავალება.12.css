@@ -13,21 +13,96 @@ body{
     background-position: center center;
     position: relative !important;
     background-image: url(https://preview.colorlib.com/theme/passport/images/hero_1.jpg.webp);
+
 }
+.backs{
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100vh;
+  
+}
+.navbar-brand{
+  color: white;
+  font-family: a;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  
+}
+.navbar-brand:hover{
+  color: white;
+
+}
+
+#dropcol {
+  color: black !important;
+  padding: 4px 16px;
+}
+#dropcol:hover{
+  color: #fc8621 !important;
+}
+.dropdown-item:hover{
+  background-color: #ffffff !important;
+  color: #fc8621 !important;
+
+}
+
 .navbar{
    
-    padding: 20px 40px;
+    padding: 20px 0px;
     margin-left: 12.3%;
     margin-right: 250px;
+    
     padding-top: 50px !important;
+    width: 70% !important;
+    margin: auto !important;
 }
+.container-fluid{
+  padding-left: 0px !important;
+  
+  
+}
+.nav-link{
+  color: #ffffffb3 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  padding: 10px 15px !important;
+}
+#nav-link{
+  color: #ffffff !important;
+  padding-left: 32px;
+}
+.nav-link:hover{
+  color:#ffffff !important;
+  transition: 0.5s;
+}
+.btn{
+  color:white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 30px !important;
+  padding: 6px 20px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  
+}
+.btn:hover{
+  background-color: #fc8621 !important;
+}
+
 .playicon{
     border: 1px solid white;
     border-radius: 50%;
 }
+.watchvideo  span{
+  font-size: 16px;
+  font-weight: 400;
+}
+.watchvideo a:hover{
+  color: white;
+}
 .watchvideo a{
     text-decoration: none ;
     color: white;
+    gap:10px;
+    cursor: pointer;
 }
 .fa-location-dot{
     border: 1px solid black;
@@ -40,6 +115,10 @@ body{
     
     
 }
+.tophead{
+  width: 70%;
+  margin: auto;
+}
 .header{
     color: white;
     display: flex;
@@ -47,8 +126,9 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 85vh;
-    margin-left: 15%;
-    width: 26%;
+
+    
+    
     
 }
 .heading{
@@ -56,27 +136,281 @@ body{
     display: block;
     font-size: 60px;
     font-weight: 700;
-    line-height: 48px;
-    margin-block-end: 48px;
-    margin-block-start: 0px;
+    font-family: a;
     margin-bottom: 48px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    margin-top: 0px;
-    opacity: 1;
     width: 100%;
 }
 .inf{
     margin-top: 200px;
 }
+
 .fc:focus{
     background-color: rgb(217, 128, 32);
     color: white;
     
+}
+.webinf{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  padding:112px 0px;
+}
+.lefttx{
+  display:flex ;
+  flex-direction: column;
+  padding: 0px 12px;
+  width: 40%;
+
+}
+.lefttx span{
+  color: #fc8621;
+  font-size: 18px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.lefttx h2{
+  font-family: a;
+  font-size: 46px;
+  font-weight: 700;
+  
+
+}
+.lefttx p{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.lefttx a{
+  text-decoration:none ;
+  color: white;
+  background-color: #fc8621;
+  padding: 10px 30px;
+  border-radius:30px;
+}
+.infbott{
+  margin: 48px 0px !important;
+  margin-bottom: 48px;
+}
+.rightimg{
+  display: flex;
+  
+}
+.rightimg img{
+  width: 306px;
+  height: 387px;
+  
+  padding: 0px 12px;
+  
+}
+.img2{
+  margin-top: 48px;
 }
 
   
   .plus:focus::after {
     content: '-';
 
+  }
+  .brandul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 5px;
+    
+  }
+  .brands{
+    
+    border-radius: 50%;
+    background-color: #777777;
+    width:30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  
+  
+  .conn li:hover{
+    background-color: #fc8621;
+  }
+  .reg{
+    background-color: #fc8621;
+    padding: 48px 0px;
+    
+  }
+  .reg1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flt h3{
+    color: white;
+    font-family:a;
+  }
+  .rght a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid ;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+  .rght a:hover{
+    color: #fc8621;
+    background-color: white;
+  }
+  .clogsph2 span{
+    color: #fc8621;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+
+  }
+  .clogsph2 h2{
+    font-family: a;
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+  .clogsph2{
+    padding: 0px 10px;
+  }
+  .blog{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .blogimg{
+    display: flex;
+    
+    
+    
+  }
+  .blog{
+    display: flex;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    
+    width: 70%;
+    margin: auto;
+  }
+  .bloginf{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+  }
+  .bloginf span{
+    font-size: 12px;
+    font-weight: 400px;
+  }
+  .bloginf p{
+    box-sizing: border-box;
+    display: flex; 
+    
+  }
+  .bloginf a{
+    text-decoration: none;
+    font-family: a;
+    color: black;
+    margin-bottom:8px ;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .bloginf a:hover{
+    color: #fc8621;
+  }
+
+  .psinf{
+    padding: 0px 10px;
+    color: #fc8621;
+  }
+  .blogimg div{
+    padding: 0px 10px;
+    
+  }
+  
+  .blogimg img{
+    width: 100%;
+    
+  }
+  .contact{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin: auto ;
+    box-sizing: border-box;
+    
+  }
+  .backbot{
+    background-color: #efefef;
+  }
+  .contact div{
+    padding: 0px 12px;
+  }
+  
+  .contact h3{
+    margin-bottom: 30px;
+    font-family: a;
+    font-size: 16px;
+    font-weight: 700;
+
+  }
+  .conin{
+    margin-left: -20px;
+  }
+  .conin p{
+    color: #777777;
+  }
+  
+  .cop{
+    display: inline-block ;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    
+  }
+  .cop a{
+    text-decoration: none;
+    color: #fc8621;
+  }
+  .cop a:hover{
+    color: #fc8621;
+  }
+  
+  .coont p{
+    font-size: 15px ;
+    font-weight: 400;
+    color: #777777;
+  }
+  .coninf{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+    
+  }
+  .coninf address{
+    color: #777777;
+  }
+  .coninf ul{
+    padding: 0;
+  }
+  .coninf li{
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  .coninf a{
+    text-decoration: none;
+    color: #777777;
   }

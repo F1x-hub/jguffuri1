@@ -190,7 +190,11 @@ body {
   font-weight: 400;
   color: #fc8621;
 }
-.carousel-item img{
+.carousel-inner  .carousel-item{
+  display: block;
+}
+
+.carousel-inner .carousel-item img{
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
@@ -422,7 +426,22 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-
+.redo{
+  background-color: #fc8621 !important;
+}
+.bbww{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #fc8621;
+  transform: scale(0.3);
+  background-color: #f8f9fa;
+  margin-right: -20px;
+}
+.bbww:hover{
+  background-color: #fc8621;
+  transition: 0.4s;
+}
 .itminf {
   display: flex;
   flex-direction: column;

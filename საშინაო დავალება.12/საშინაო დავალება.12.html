@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="საშინაო დავალება.12.css" />
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,7 +32,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+    <link rel="stylesheet" href="საშინაო დავალება.12.css" />
   </head>
   <body>
     <div class="main">
@@ -262,8 +262,8 @@
         </div>
         <div class="leftcustomer">
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div class="carousel-inner owl-carousel" id="slider2">
+              <div class="carousel-item">
                 <img src="https://preview.colorlib.com/theme/passport/images/person_1.jpg" class="d-block" alt="...">
                 <h3>John Doe</h3>
                 <p>CEO, Founder</p>
@@ -284,7 +284,11 @@
             </div>
           </div>
         </div>
-        
+        <div class="budot">
+          <button class="bbww active owl-dot"></button>
+          <button class="bbww owl-dot"></button>
+          <button class="bbww owl-dot"></button>
+        </div>
       </div>
       
       
@@ -502,6 +506,40 @@
             owl.trigger("next.owl.carousel"); 
         });     
     });
+    $(document).ready(function() {
+        var owl = $("#slider2");
+        owl.owlCarousel({
+            loop: true,
+            margin: 30,
+            items: 1,
+            nav: false,
+            autoplay: false,
+            stagepadding: 5,
+            autopayTimeout: 50000,
+            dots: true,
+            
+            dotsContainer: '.budot',
+            
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            onChanged: updateDotsColor 
+        });
+        
+        function updateDotsColor(event) {
+            var activeDot = $('.bbww.active');
+            var inactiveDots = $('.bbww').not('.active');
+            
+            activeDot.css('background-color', '#fc8621');
+            inactiveDots.css('background-color', 'white'); 
+        }
+        
+        
+        
+        
+           
+    });
+
     function updateDotsColor(event) {
   var activeDot = $('.carousel-dot.active');
   var inactiveDots = $('.carousel-dot').not('.active');
